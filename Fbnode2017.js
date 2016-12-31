@@ -1,6 +1,5 @@
 var login = require("facebook-chat-api");
 login({email: "Your-Username", password: "Your-Password"}, function callback (err, api) {
-	var expire = api.expire
   if(err) return console.error(err);
 
   api.getFriendsList(function(err, data) {
